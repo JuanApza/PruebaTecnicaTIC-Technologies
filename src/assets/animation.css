@@ -1,0 +1,64 @@
+@font-face {
+    font-family: 'supreme';
+    src: url('../assets/fonts/Supreme-Variable.ttf') format('truetype');
+    font-style: normal;
+  }
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: supreme;
+}
+
+.fade-in {
+    animation: fadeIn 0.3s;
+    -webkit-animation: fadeIn 0.3s;
+    -moz-animation: fadeIn 0.3s;
+    -o-animation: fadeIn 0.3s;
+    -ms-animation: fadeIn 0.3s;
+  }
+  @keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+
+  @keyframes bounce-spin {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  25% {
+    transform: translateY(-30px) rotate(90deg);
+  }
+  50% {
+    transform: translateY(0) rotate(180deg);
+  }
+  75% {
+    transform: translateY(-15px) rotate(270deg);
+  }
+}
+
+.pokeball-loader {
+  animation: bounce-spin 1.2s infinite ease-in-out;
+}
+
